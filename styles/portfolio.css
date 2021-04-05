@@ -1,0 +1,159 @@
+:root {
+  --text-color: #4e3620;
+  --highlight-color: #fcf8e8;
+  --background-color: #ecdfc8;
+  --header-color: #ecb390;
+  --navbar-color: #df7861;
+  --heading-font: "Spectral", serif;
+  --default-font: "Karla", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--default-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+.main-nav {
+  background-color: var(--navbar-color);
+  position: fixed;
+  width: 100%;
+}
+
+.main-nav .container {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.navbar-collapse {
+  flex-grow: inherit;
+}
+
+.main-nav .navbar-brand,
+.main-nav .nav-link {
+  color: var(--text-color) !important;
+}
+
+.main-nav .navbar-brand {
+  font-family: var(--heading-font);
+  font-weight: 500;
+}
+
+.main-nav .nav-link {
+  font-weight: 400;
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav .nav-link:hover {
+  color: var(--background-color) !important;
+}
+
+.main-nav .active {
+  color: var(--highlight-color) !important;
+  font-weight: 500;
+}
+
+header {
+  background-color: var(--header-color);
+  color: var(--text-color);
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  margin: 0;
+}
+
+header h2 {
+  font-family: var(--default-font);
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.btn {
+  background-color: var(--highlight-color);
+  color: var(--navbar-color);
+  border: 2px solid var(--highlight-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--navbar-color);
+  color: var(--highlight-color);
+  border: 2px solid var(--highlight-color);
+}
+
+.homepage-work-preview h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.homepage-work-preview img {
+  max-width: 400px;
+  border: 2px solid var(--text-color);
+  padding: 20px;
+  background-color: var(--highlight-color);
+  border-radius: 5px;
+}
+
+.homepage-work-preview h4 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.homepage-work-preview p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+footer {
+  background-color: var(--header-color);
+}
+
+footer .footer-links,
+footer .coded-by {
+  color: var(--text-color);
+  transition: all 0.2s ease-in-out;
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-links:hover {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+footer .social-link {
+  font-size: 2rem;
+}
+
+footer p {
+  font-weight: 200;
+  margin: 0;
+}
+
+footer .github-link {
+  font-weight: 300;
+}
