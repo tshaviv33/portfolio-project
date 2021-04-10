@@ -179,6 +179,28 @@ header hr {
   font-weight: 200;
 }
 
+.social-link {
+  font-size: 2rem;
+}
+
+.contact h4 {
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--highlight-color);
+}
+
+.contact a,
+.contact .social-link {
+  color: var(--header-navbar-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.contact a:hover,
+.contact .social-link:hover {
+  color: var(--text-color);
+}
+
 footer {
   background-color: #aa8c71;
 }
@@ -195,11 +217,6 @@ footer .coded-by {
 footer .footer-links:hover {
   color: var(--text-color);
   opacity: 1;
-}
-
-footer .social-link {
-  font-size: 2rem;
-  color: var(--highlight-color);
 }
 
 footer p {
@@ -299,11 +316,15 @@ galaxy fold 280
     font-size: 1.5rem;
   }
 
+  .contact h4 {
+    font-size: 1.5rem;
+  }
+
   footer h5 {
     font-size: 1rem;
   }
 
-  footer .social-link {
+  .social-link {
     font-size: 1.2rem;
   }
 
